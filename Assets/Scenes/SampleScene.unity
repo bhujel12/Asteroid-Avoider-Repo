@@ -5048,7 +5048,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -5120,7 +5120,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0.022139486, b: 0.122641504, a: 0}
+  m_BackGroundColor: {r: 0.20825917, g: 0.24324524, b: 0.3773585, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -5230,6 +5230,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4530302269161020, guid: e261f7b66a8f0fd4492d87df1eee4222, type: 3}
   m_PrefabInstance: {fileID: 537152400}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1813629691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1813629692}
+  - component: {fileID: 1813629693}
+  m_Layer: 0
+  m_Name: AsteroidSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1813629692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813629691}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1813629693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813629691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247234d6e011c440d9b6a1872574e05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroidPrefabs:
+  - {fileID: 6202722386033024204, guid: b295173244ade4674929e3ea07230590, type: 3}
+  - {fileID: 6238240701123980353, guid: d30a5bf31d51e401e88b5d5a2ee4bab9, type: 3}
+  secondsBetweenAsteroids: 1.5
+  forceRange: {x: 4, y: 6}
 --- !u!1 &2016036619
 GameObject:
   m_ObjectHideFlags: 0
@@ -5334,7 +5383,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6234507189208207301, guid: d30a5bf31d51e401e88b5d5a2ee4bab9, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6234507189208207301, guid: d30a5bf31d51e401e88b5d5a2ee4bab9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5391,7 +5440,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6199199635214880880, guid: b295173244ade4674929e3ea07230590, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6199199635214880880, guid: b295173244ade4674929e3ea07230590, type: 3}
       propertyPath: m_LocalPosition.x
