@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+
+    [SerializeField] private GameOverHandler gameOverHandler;
+
     public void Crash()
     {
-        // Not destroying player as of now because a later script will give another life after watching an ad.
+        gameOverHandler.EndGame();
+
         gameObject.SetActive(false);
     }
 }
